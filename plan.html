@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ms">
+
+<head>
+    <title>MAL TRAD Company</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/brand-logo/favicon.ico" />
+    <!-- VIEWPORT -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div id="brand-header-1" class="brand-logo-name" class="header-1">
+            <div><a href="index.html"><img class="brand-logo" src="img/brand-logo/favicon.png" alt="logo"></a></div>
+            <div class="brand-name"><b class="brand-text">TRAD COMPANY</b></div>
+        </div>
+
+        <div id="nav-bar" class="header-1">
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="plan.html">Plan</a></li>
+                    <li><a href="bank.html">Bank</a></li>
+                    <li><a href="certificate.html">Certificate</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <a class="header-1" style="padding: 0% 15%;">&nbsp</a>
+
+        <div id="brand-header-2" class="brand-logo-name" class="header-2">
+            <div><a href="index.html"><img class="brand-logo" src="img/brand-logo/favicon.png" alt="logo"></a></div>
+            <div class="brand-name"><b class="brand-text">TRAD COMPANY</b></div>
+        </div>
+
+        <!--Burger Menu-->
+        <div id="nav-button">
+            <a href="javascript:void(0);" class="icon header-2" onclick="openNav()">
+                <i class="fa fa-regular fa-bars"></i>
+            </a>
+        </div>
+
+        <!-- The overlay -->
+        <div id="myNav" class="overlay-menu">
+
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="plan.html">Plan</a>
+                <a href="bank.html">Bank</a>
+                <a href="certificate.html">Certificate</a>
+                <a href="about.html">About Us</a>
+            </div>
+
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <section>
+        <div class="center-text">
+            <h1 class="title-text">
+                PLAN
+            </h1>
+        </div>
+
+
+        <img id="img-box" src="img/plan/plan.jpg">
+
+        <div class="flex-container">
+            <div class="box center-text">
+                ♻️ PLAN RM 250 <br>
+                RM 20 x 75 hari = RM 1,500
+            </div>
+
+            <div class="box center-text">
+                ♻️ PLAN RM 750 <br>
+                RM 60 x 80 hari = RM 4,800
+            </div>
+
+            <div class="box center-text">
+                ♻️ PLAN RM 1750 <br>
+                RM 150 x 85 hari = RM 12,750
+            </div>
+            <div class="box center-text">
+                ♻️ PLAN RM 3500 <br>
+                RM 300 x 90 hari = RM 27,000
+            </div>
+        </div>
+
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <div class="center-text">
+            <p id="description-copyright-text">
+                Copyright © 2024 www.mal-trad.com - All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+
+<script src="js/main.js"></script>
+
+<!--Burger Menu-->
+<script>
+    var navButton = document.getElementById("nav-button");
+
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+
+        // Toggle the display property of the navigation menu
+        if (navButton.style.display === "block") {
+            navButton.style.display = "none";
+        } else {
+            navButton.style.display = "block";
+        }
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+
+        // Toggle the display property of the navigation menu
+        if (navButton.style.display === "none") {
+            navButton.style.display = "block";
+        } else {
+            navButton.style.display = "block";
+        }
+    }
+</script>
+
+</html>
