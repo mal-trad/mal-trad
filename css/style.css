@@ -141,7 +141,7 @@ button:hover {
 
 .brand-text {
     font-family: "Archivo Black", sans-serif;
-    font-size: 22.5px;
+    font-size: 19.5px;
     color: #1CA1AA;
     margin-left: -14;
     margin-top: 0px;
@@ -603,7 +603,7 @@ span {
     }
 
     .title-text {
-        font-size: clamp(1.5rem, 1.5rem + 0.25vw, 1.8rem);
+        font-size: clamp(1.1rem, 1.1rem + 0.25vw, 1.5rem);
     }
 
     #company-description-title {
